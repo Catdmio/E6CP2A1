@@ -19,10 +19,16 @@ def random
   [true, false].sample
 end
 
-if random == true
-  puts 'sí'
-elsif random == false
-  puts 'no'
-else
-  puts 'error'
-end
+# if random == true
+#   puts 'sí'
+# elsif random == false
+#   puts 'no'
+# else
+#   puts 'error'
+# end
+
+case random
+	when true then puts 'si'
+	when false then puts 'no'
+	else puts 'error'
+	end
